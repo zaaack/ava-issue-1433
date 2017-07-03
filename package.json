@@ -1,0 +1,38 @@
+{
+  "name": "ava-issue-1433",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "babel-preset-env": "^1.5.2",
+    "babel-preset-stage-0": "^6.24.1",
+    "rc-upload": "^2.3.8",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-scripts": "1.0.10"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "ava",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "ava": "^0.20.0",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-react": "^6.24.1",
+    "browser-env": "^3.0.2",
+    "jsdom": "^11.0.0",
+    "map-obj": "^2.0.0",
+    "react-test-renderer": "^15.6.1"
+  },
+  "ava": {
+    "babel": "inherit",
+    "files": [
+      "test/**/*.test.js"
+    ],
+    "require": [
+      "babel-register",
+      "./test/setup.js"
+    ]
+  }
+}
